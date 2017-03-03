@@ -5,13 +5,14 @@ var path = require('path');
 module.exports = function(env) {
   return {
 		entry: {
-			main: './app/index.js',
+      main: './app/index.js',
 			vendor: 'moment'
 		},
-		output: {
+    output: {
 			filename: '[name].js',
 			path: path.resolve(__dirname, 'dist')
 		},
+    watch: true,
     plugins: [
       new webpack.optimize.CommonsChunkPlugin({
         names:['vendor', 'manifest']
@@ -19,9 +20,8 @@ module.exports = function(env) {
     ],
 
     devServer: {
-      contentBase: path.join(__dirname, "./"),
-      compress: true,
-      hot: true
+      contentBase: "./",
+      compress: true
     }
   }//end of return
 }
