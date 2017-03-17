@@ -19,9 +19,25 @@ module.exports = function(env) {
       })
     ],
 
+    resolve: {
+      extensions: ['.js', '.jsx'],
+    },
     devServer: {
       contentBase: "./",
       compress: true
+    }, 
+
+    module: {
+      rules: [
+        {
+          test: /\.js$/,
+          use: [{ 
+            loader: 'babel-loader', 
+            options: {presets: ['react', 'es2015']}
+          }],
+          exclude: /node_modules/
+        },
+      ],
     }
   }//end of return
 }
