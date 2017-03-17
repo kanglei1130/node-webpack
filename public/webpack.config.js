@@ -12,13 +12,9 @@ module.exports = function(env) {
 			filename: '[name].js',
 			path: path.resolve(__dirname, 'dist')
 		},
-    watch: true,
-    plugins: [
-      new webpack.optimize.CommonsChunkPlugin({
-        names:['vendor', 'manifest']
-      })
-    ],
 
+    
+    watch: true,
     resolve: {
       extensions: ['.js', '.jsx'],
     },
