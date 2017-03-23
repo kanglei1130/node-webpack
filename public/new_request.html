@@ -1,0 +1,147 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- NOTE: external links are for testing only -->
+    <link href="https://www.letsublease.com/assets/css/mui-email-inline.css" rel="stylesheet" />
+
+    <style>
+
+        #outlook a {
+            padding: 0;
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        .mui-container-fixed {
+            width: 600px;
+            display: block;
+            margin: 0 auto;
+            clear: both;
+            text-align: left;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        body,
+        .mui-body {
+            background-color: #eee;
+            font-size: 15px;
+        }
+        .mui-container,
+        .mui-container-fixed {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        #content-wrapper h2 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        #content-wrapper > tbody > tr > td {
+            padding-bottom: 15px;
+        }
+
+        #content-wrapper .mui--divider-top {
+            padding-top: 15px;
+        }
+
+        #last-cell {
+            padding-bottom: 15px;
+        }
+
+        a.mui-button-text {
+            text-transform: none;
+        }
+
+        /* Tutorial CSS goes here (NOTE: CSS should be inlined in production */
+    </style>
+</head>
+<body>
+<center>
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+            <td class="mui-panel mui-container-fixed">
+                <table
+                        id="content-wrapper"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                >
+                    <tbody>
+                    <tr>
+                        <td>
+                            <p align="left">
+                                <a href="https://www.letsublease.com">
+                                    <img src="https://www.letsublease.com/assets/images/logo_v1.png" alt="Smiley face" style="float:left;width:56px;height:56px;">
+                                </a>
+                                <font color="#c5050c" size="6px;">Let's Sublease</font><br>
+                                <font color="black" size="4px;">Save You Time and Money for Subleasing</font>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mui--divider-top">
+                            Hello _$FIRSTNAME _$LASTNAME,
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Good news! There is a newly room request that you might be interested in:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="_$LINK_REQUEST" class="mui-btn mui-btn--raised mui-button-text mui-btn--primary">_$REQUEST_SUMMARY</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Or</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            If your room is not available anymore, click to delist your room (others will not see your room post
+                            and you will not receive similar messages anymore):
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="_$LINK_DELIST_ROOM" class="mui-btn mui-btn--raised mui-button-text mui-btn--primary">Delist your room</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+
+                        </td>
+                    </tr><tr>
+                        <td>
+                            Many Thanks,
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="last-cell">
+                            The Let's Sublease Team
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+</center>
+
+</body>
+</html>
