@@ -1,17 +1,15 @@
-import _ from 'lodash';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import todoApp from './reducers'
+import App from './components/App'
 
-function component() {
-  var element = document.createElement('div');
-  element.innerHTML = _.join(['Hello', 'World', 'I ve you'], ' ');
-  console.log(element);
-  return element;
-}
+let store = createStore(todoApp)
 
-
-
-ReactDOM.render(
-  <h1>Hello, world! Test</h1>,
-  document.getElementById('root')
-);
+render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    document.getElementById('root')
+)
